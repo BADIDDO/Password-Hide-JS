@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+body {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(2, 2, 41);
+}
+.container {
+    width: 70%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 6px;
+    position: relative;
+}
+.container .box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+display: flex;
+align-items: center;
+transition: all .4s ease;
+}
+.box input {
+    outline: none;
+    padding: 8px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 18px;
+}
+
+input:is(:focus , :valid) ~ label {
+    color: #4070f4;
+    top: -9px;
+    font-size: 12px;
+    background-color: #fff;
+}
+.box input:focus {
+    border: 2px solid #4070f4;
+    border-radius: 6px;
+}
+.box label  {
+    position: absolute;
+    left: 15px;
+}
+.box i  {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.container button {
+    width: 40%;
+    margin: 20px auto;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+transition: .4s ease;
+position: relative;
+left: 50%;
+transform: translateX(-50%);
+background-color: gray;
+}
+button:hover {
+    background-color: #4070f4;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
